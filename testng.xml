@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <listeners>
-        <listener class-name="RunFirstScript.Listeners" />
+        <listener class-name="Utlis.Listeners" />
     </listeners>
   <!-- Test for ec_commerce_tc_1 -->
   <test name="ec_commerce_tc_1">

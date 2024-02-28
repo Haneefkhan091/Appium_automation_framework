@@ -7,13 +7,14 @@ import org.openqa.selenium.remote.RemoteWebElement;
 import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 
 public class action {
 
-	AndroidDriver driver;
+	AppiumDriver driver;
 
-	public action(AndroidDriver driver) {
+	public action(AppiumDriver driver) {
 		// TODO Auto-generated constructor stub
 
 		this.driver = driver;

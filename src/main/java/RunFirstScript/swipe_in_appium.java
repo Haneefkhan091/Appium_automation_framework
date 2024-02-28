@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import Utlis.BaseTest;
 import io.appium.java_client.AppiumBy;
 
 public class swipe_in_appium extends BaseTest  {

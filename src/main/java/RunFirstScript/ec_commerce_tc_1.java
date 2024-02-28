@@ -12,6 +12,7 @@ import Action_package.action;
 import Page_factory.CartPage;
 import Page_factory.FormPage;
 import Page_factory.ProductCatalogue;
+import Utlis.BaseTest;
 import io.appium.java_client.AppiumBy;
 
 public class ec_commerce_tc_1 extends BaseTest {

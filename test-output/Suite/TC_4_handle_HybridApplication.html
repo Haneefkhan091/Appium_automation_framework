@@ -55,17 +55,117 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TC_4_handle_HybridApplication</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 14 22:58:21 PKT 2024</td>
+<td>Started on:</td><td>Mon Feb 26 09:10:49 PKT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (2 ms)</td>
+<tr><td>Total time:</td><td>37 seconds (37720 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>Smoke </td>
+<td>Included groups:</td><td></td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='RunthroughTesNGXML.TC_4_handle_HybridApplication.tc1()'><b>tc1</b><br>Test class: RunthroughTesNGXML.TC_4_handle_HybridApplication</td>
+<td><div><pre>io.appium.java_client.NoSuchContextException: An unknown server-side error occurred while processing the command. Original error: Trying to use a chromedriver binary at the path ‪C:\Users\Haneef-ullah\eclipse-workspace\Appium_project\ChromeDriver\chromedriver.exe, but it doesn&apos;t exist!
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [7a4a5a2c-cf89-4a11-bbda-f9dec3387b8c, switchToContext {name=WEBVIEW_com.androidsample.generalstore}]
+Capabilities {appium:app: C:\Users\Haneef-ullah\eclip..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: ‪C:\Users\Haneef-ullah\ecli..., appium:databaseEnabled: false, appium:desired: {app: C:\Users\Haneef-ullah\eclip..., automationName: UIAutomator2, chromedriverExecutable: ‪C:\Users\Haneef-ullah\ecli..., deviceName: emulator-5554, platformName: ANDROID}, appium:deviceApiLevel: 25, appium:deviceManufacturer: OPPO, appium:deviceModel: CPH2023, appium:deviceName: , appium:deviceScreenDensity: 240, appium:deviceScreenSize: 1600x900, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 1.5, appium:platformVersion: 7.1.2, appium:statBarHeight: 36, appium:takesScreenshot: true, appium:viewportRect: {height: 864, left: 0, top: 36, width: 1600}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7a4a5a2c-cf89-4a11-bbda-f9dec3387b8c
+	at io.appium.java_client.remote.SupportsContextSwitching.context(SupportsContextSwitching.java:48)
+	at RunthroughTesNGXML.TC_4_handle_HybridApplication.tc1(TC_4_handle_HybridApplication.java:77)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Trying to use a chromedriver binary at the path ‪C:\Users\Haneef-ullah\eclipse-workspace\Appium_project\ChromeDriver\chromedriver.exe, but it doesn&apos;t exist!
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [7a4a5a2c-cf89-4a11-bbda-f9dec3387b8c, switchToContext {name=WEBVIEW_com.androidsample.generalstore}]
+Capabilities {appium:app: C:\Users\Haneef-ullah\eclip..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: ‪C:\Users\Haneef-ullah\ecli..., appium:databaseEnabled: false, appium:desired: {app: C:\Users\Haneef-ullah\eclip..., automationName: UIAutomator2, chromedriverExecutable: ‪C:\Users\Haneef-ullah\ecli..., deviceName: emulator-5554, platformName: ANDROID}, appium:deviceApiLevel: 25, appium:deviceManufacturer: OPPO, appium:deviceModel: CPH2023, appium:deviceName: , appium:deviceScreenDensity: 240, appium:deviceScreenSize: 1600x900, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 1.5, appium:platformVersion: 7.1.2, appium:statBarHeight: 36, appium:takesScreenshot: true, appium:viewportRect: {height: 864, left: 0, top: 36, width: 1600}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7a4a5a2c-cf89-4a11-bbda-f9dec3387b8c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:302)
+	at io.appium.java_client.remote.SupportsContextSwitching.context(SupportsContextSwitching.java:45)
+	... 29 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1812442475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1812442475'><pre>io.appium.java_client.NoSuchContextException: An unknown server-side error occurred while processing the command. Original error: Trying to use a chromedriver binary at the path ‪C:\Users\Haneef-ullah\eclipse-workspace\Appium_project\ChromeDriver\chromedriver.exe, but it doesn&apos;t exist!
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [7a4a5a2c-cf89-4a11-bbda-f9dec3387b8c, switchToContext {name=WEBVIEW_com.androidsample.generalstore}]
+Capabilities {appium:app: C:\Users\Haneef-ullah\eclip..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: ‪C:\Users\Haneef-ullah\ecli..., appium:databaseEnabled: false, appium:desired: {app: C:\Users\Haneef-ullah\eclip..., automationName: UIAutomator2, chromedriverExecutable: ‪C:\Users\Haneef-ullah\ecli..., deviceName: emulator-5554, platformName: ANDROID}, appium:deviceApiLevel: 25, appium:deviceManufacturer: OPPO, appium:deviceModel: CPH2023, appium:deviceName: , appium:deviceScreenDensity: 240, appium:deviceScreenSize: 1600x900, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 1.5, appium:platformVersion: 7.1.2, appium:statBarHeight: 36, appium:takesScreenshot: true, appium:viewportRect: {height: 864, left: 0, top: 36, width: 1600}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7a4a5a2c-cf89-4a11-bbda-f9dec3387b8c
+	at io.appium.java_client.remote.SupportsContextSwitching.context(SupportsContextSwitching.java:48)
+	at RunthroughTesNGXML.TC_4_handle_HybridApplication.tc1(TC_4_handle_HybridApplication.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Trying to use a chromedriver binary at the path ‪C:\Users\Haneef-ullah\eclipse-workspace\Appium_project\ChromeDriver\chromedriver.exe, but it doesn&apos;t exist!
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [7a4a5a2c-cf89-4a11-bbda-f9dec3387b8c, switchToContext {name=WEBVIEW_com.androidsample.generalstore}]
+Capabilities {appium:app: C:\Users\Haneef-ullah\eclip..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: ‪C:\Users\Haneef-ullah\ecli..., appium:databaseEnabled: false, appium:desired: {app: C:\Users\Haneef-ullah\eclip..., automationName: UIAutomator2, chromedriverExecutable: ‪C:\Users\Haneef-ullah\ecli..., deviceName: emulator-5554, platformName: ANDROID}, appium:deviceApiLevel: 25, appium:deviceManufacturer: OPPO, appium:deviceModel: CPH2023, appium:deviceName: , appium:deviceScreenDensity: 240, appium:deviceScreenSize: 1600x900, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 1.5, appium:platformVersion: 7.1.2, appium:statBarHeight: 36, appium:takesScreenshot: true, appium:viewportRect: {height: 864, left: 0, top: 36, width: 1600}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7a4a5a2c-cf89-4a11-bbda-f9dec3387b8c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:302)
+	at io.appium.java_client.remote.SupportsContextSwitching.context(SupportsContextSwitching.java:45)
+	... 29 more
+</pre></div></td>
+<td>25</td>
+<td>RunthroughTesNGXML.TC_4_handle_HybridApplication@39d76cb5</td></tr>
+</table><p>
 </body>
 </html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <listeners>
+        <listener class-name="RunFirstScript.Listeners" />
+    </listeners>
+  <!-- Test for ec_commerce_tc_1 -->
+  <test name="ec_commerce_tc_1">
+    <classes>
+      <class name="RunthroughTesNGXML.ec_commerce_tc_1"/>
+    </classes>
+  </test>
+
+  <!-- Test for Ec_commerce_TC__2_toast_and_beforeclassExplanation -->
+  <test name="Ec_commerce_TC__2_toast_and_beforeclassExplanation">
+    <classes>
+      <class name="RunthroughTesNGXML.Ec_commerce_TC__2_toast_and_beforeclassExplanation"/>
+    </classes>
+  </test>
+
+  <!-- Test for TC_4_handle_HybridApplication -->
+  <test name="TC_4_handle_HybridApplication">
+    <classes>
+      <class name="RunthroughTesNGXML.TC_4_handle_HybridApplication"/>
+    </classes>
+  </test>
+
+  <!-- Test for TC_3_sum_price -->
+  <test name="TC_3_sum_price">
+    <classes>
+      <class name="RunthroughTesNGXML.TC_3_sum_price"/>
+    </classes>  
+  </test>
+
+</suite>

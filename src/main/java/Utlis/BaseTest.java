@@ -1,4 +1,4 @@
-package RunFirstScript;
+package Utlis;
 
 import static org.testng.Assert.assertEquals;
 
@@ -72,8 +72,8 @@ public class BaseTest {
 		options.setDeviceName(DeviceName);// device emulater
 		options.setChromedriverExecutable("‪C:\\Users\\Haneef-ullah\\eclipse-workspace\\Appium_project\\ChromeDriver\\chromedriver.exe");
 
-//		options.setApp("C:\\Users\\Haneef-ullah\\eclipse-workspace\\Appium_project\\APK\\ApiDemos-debug (2).apk");
-		options.setApp("C:\\Users\\Haneef-ullah\\eclipse-workspace\\Appium_project\\APK\\001 General-Store.apk");
+		options.setApp("C:\\Users\\Haneef-ullah\\eclipse-workspace\\Appium_project\\APK\\ApiDemos-debug.apk");
+//		options.setApp("C:\\Users\\Haneef-ullah\\eclipse-workspace\\Appium_project\\APK\\001 General-Store.apk");
 
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
 

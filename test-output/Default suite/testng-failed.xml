@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RunFirstScript.Long_press">
+      <class name="API_demo.Textview_scenerios">
         <methods>
-          <include name="longpress"/>
-          <include name="teardown"/>
+          <include name="textview"/>
           <include name="configureappium"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- RunFirstScript.Long_press -->
+      </class> <!-- API_demo.Textview_scenerios -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

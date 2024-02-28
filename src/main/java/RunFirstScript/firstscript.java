@@ -9,6 +9,9 @@ import org.openqa.selenium.DeviceRotation;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import Utlis.BaseTest;
+
 import org.*;
 //import org.testng.asserts.*;
 

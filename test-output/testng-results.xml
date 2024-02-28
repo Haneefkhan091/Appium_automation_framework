@@ -1,51 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-14T22:57:38 PKT" name="Suite" finished-at="2024-02-14T22:58:21 PKT" duration-ms="42269">
+  <suite started-at="2024-02-26T10:10:28 PKT" name="Default suite" finished-at="2024-02-26T10:10:49 PKT" duration-ms="20645">
     <groups>
-      <group name="Smoke">
-        <method signature="ec_commerce_tc_1.tc1(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:RunthroughTesNGXML.ec_commerce_tc_1@56dc1551]" name="tc1" class="RunthroughTesNGXML.ec_commerce_tc_1"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-02-14T22:57:38 PKT" name="ec_commerce_tc_1" finished-at="2024-02-14T22:58:20 PKT" duration-ms="41216">
-      <class name="RunthroughTesNGXML.ec_commerce_tc_1">
-        <test-method is-config="true" signature="configureappium()[pri:0, instance:RunthroughTesNGXML.ec_commerce_tc_1@56dc1551]" started-at="2024-02-14T22:57:38 PKT" name="configureappium" finished-at="2024-02-14T22:57:55 PKT" duration-ms="16196" status="PASS">
+    <test started-at="2024-02-26T10:10:28 PKT" name="Default test" finished-at="2024-02-26T10:10:49 PKT" duration-ms="20645">
+      <class name="API_demo.Textview_scenerios">
+        <test-method is-config="true" signature="configureappium()[pri:0, instance:API_demo.Textview_scenerios@1a677343]" started-at="2024-02-26T10:10:28 PKT" name="configureappium" finished-at="2024-02-26T10:10:39 PKT" duration-ms="10517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureappium -->
-        <test-method signature="tc1(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:RunthroughTesNGXML.ec_commerce_tc_1@56dc1551]" started-at="2024-02-14T22:57:55 PKT" name="tc1" data-provider="getData" finished-at="2024-02-14T22:58:18 PKT" duration-ms="23125" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Haneef khan]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Jordan Lift Off]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Afghanistan]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="textview()[pri:0, instance:API_demo.Textview_scenerios@1a677343]" started-at="2024-02-26T10:10:39 PKT" name="textview" finished-at="2024-02-26T10:10:48 PKT" duration-ms="9377" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc1 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:RunthroughTesNGXML.ec_commerce_tc_1@56dc1551]" started-at="2024-02-14T22:58:18 PKT" name="teardown" finished-at="2024-02-14T22:58:20 PKT" duration-ms="1823" status="PASS">
+        </test-method> <!-- textview -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:API_demo.Textview_scenerios@1a677343]" started-at="2024-02-26T10:10:48 PKT" name="teardown" finished-at="2024-02-26T10:10:49 PKT" duration-ms="721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- RunthroughTesNGXML.ec_commerce_tc_1 -->
-    </test> <!-- ec_commerce_tc_1 -->
-    <test started-at="2024-02-14T22:58:20 PKT" name="Ec_commerce_TC__2_toast_and_beforeclassExplanation" finished-at="2024-02-14T22:58:20 PKT" duration-ms="1">
-    </test> <!-- Ec_commerce_TC__2_toast_and_beforeclassExplanation -->
-    <test started-at="2024-02-14T22:58:21 PKT" name="TC_4_handle_HybridApplication" finished-at="2024-02-14T22:58:21 PKT" duration-ms="2">
-    </test> <!-- TC_4_handle_HybridApplication -->
-    <test started-at="2024-02-14T22:58:21 PKT" name="TC_3_sum_price" finished-at="2024-02-14T22:58:21 PKT" duration-ms="1">
-    </test> <!-- TC_3_sum_price -->
-  </suite> <!-- Suite -->
+      </class> <!-- API_demo.Textview_scenerios -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

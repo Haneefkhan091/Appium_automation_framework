@@ -1,6 +1,7 @@
 package RunFirstScript;
 
 import java.util.HashMap;
+import Utlis.*;
 import java.util.List;
 
 import org.testng.Assert;
@@ -15,7 +16,6 @@ import Action_package.action;
 import Page_factory.CartPage;
 import Page_factory.FormPage;
 import Page_factory.ProductCatalogue;
-import RunFirstScript.BaseTest;
 
 public class takedatafromJSON extends BaseTest {
 

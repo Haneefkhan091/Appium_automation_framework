@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import Utlis.BaseTest;
 import io.appium.java_client.AppiumBy;
 
 public class TC_3_sum_price extends BaseTest {

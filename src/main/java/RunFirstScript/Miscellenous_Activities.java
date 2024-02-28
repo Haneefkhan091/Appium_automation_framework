@@ -2,6 +2,7 @@ package RunFirstScript;
 
 import org.testng.annotations.Test;
 
+import Utlis.BaseTest;
 import io.appium.java_client.AppiumBy;
 
 public class Miscellenous_Activities extends BaseTest{
