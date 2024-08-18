@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-26T10:10:28 PKT" name="Default suite" finished-at="2024-02-26T10:10:49 PKT" duration-ms="20645">
+  <suite started-at="2024-08-18T13:09:25 PKT" name="Default suite" finished-at="2024-08-18T13:09:47 PKT" duration-ms="21459">
     <groups>
     </groups>
-    <test started-at="2024-02-26T10:10:28 PKT" name="Default test" finished-at="2024-02-26T10:10:49 PKT" duration-ms="20645">
+    <test started-at="2024-08-18T13:09:25 PKT" name="Default test" finished-at="2024-08-18T13:09:47 PKT" duration-ms="21459">
       <class name="API_demo.Textview_scenerios">
-        <test-method is-config="true" signature="configureappium()[pri:0, instance:API_demo.Textview_scenerios@1a677343]" started-at="2024-02-26T10:10:28 PKT" name="configureappium" finished-at="2024-02-26T10:10:39 PKT" duration-ms="10517" status="PASS">
+        <test-method is-config="true" signature="configureappium()[pri:0, instance:API_demo.Textview_scenerios@f6efaab]" started-at="2024-08-18T13:09:25 PKT" name="configureappium" finished-at="2024-08-18T13:09:36 PKT" duration-ms="11096" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureappium -->
-        <test-method signature="textview()[pri:0, instance:API_demo.Textview_scenerios@1a677343]" started-at="2024-02-26T10:10:39 PKT" name="textview" finished-at="2024-02-26T10:10:48 PKT" duration-ms="9377" status="PASS">
+        <test-method signature="textview()[pri:0, instance:API_demo.Textview_scenerios@f6efaab]" started-at="2024-08-18T13:09:36 PKT" name="textview" finished-at="2024-08-18T13:09:47 PKT" duration-ms="10337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- textview -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:API_demo.Textview_scenerios@1a677343]" started-at="2024-02-26T10:10:48 PKT" name="teardown" finished-at="2024-02-26T10:10:49 PKT" duration-ms="721" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:API_demo.Textview_scenerios@f6efaab]" started-at="2024-08-18T13:09:47 PKT" name="teardown" finished-at="2024-08-18T13:09:47 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

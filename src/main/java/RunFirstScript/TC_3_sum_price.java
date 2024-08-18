@@ -1,7 +1,5 @@
 package RunFirstScript;
 
-import static org.junit.Assert.assertEquals;
-
 import java.time.Duration;
 import java.util.List;
 

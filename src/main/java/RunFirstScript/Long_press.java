@@ -1,7 +1,7 @@
 package RunFirstScript;
 
-import static org.junit.Assert.assertTrue;
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.sql.Driver;
 import java.time.Duration;

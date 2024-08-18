@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="API_demo.Textview_scenerios">
+      <class name="API_demo.NFCScenerios">
         <methods>
-          <include name="textview"/>
           <include name="configureappium"/>
           <include name="teardown"/>
+          <include name="foregrounddispatch"/>
         </methods>
-      </class> <!-- API_demo.Textview_scenerios -->
+      </class> <!-- API_demo.NFCScenerios -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

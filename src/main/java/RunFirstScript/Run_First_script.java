@@ -5,8 +5,6 @@ package RunFirstScript;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import com.comcast.drivethru.utils.URL;
-
 import io.appium.java_client.AppiumDriver;
 import org.testng.annotations.Test;
 public class Run_First_script {

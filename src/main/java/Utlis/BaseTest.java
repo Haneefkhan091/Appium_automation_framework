@@ -33,7 +33,6 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -43,41 +42,34 @@ import io.appium.java_client.touch.offset.PointOption;
 
 public class BaseTest {
 	public static AndroidDriver driver;
-	public AppiumDriverLocalService service;
-	public static WebDriver driver2;
+    public AppiumDriverLocalService service;
+    public static WebDriver driver2;
 
 	@BeforeClass(alwaysRun = true)
 	public void configureappium() throws IOException {
 //		UiAutomator2Options options = new UiAutomator2Options();
 //		options.setDeviceName("emulator-5554");
 //		options.setApp("C:\\Users\\Haneef-ullah\\eclipse-workspace\\Appium_project\\APK\\ApiDemos-debug (2).apk");
+//		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), options);
 //
-//		// Assign the initialized driver to the class-level variable
-//		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		service = new AppiumServiceBuilder()
+                .withAppiumJS(new File("C:\\Users\\Haneef-ullah\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
+                .withIPAddress("127.0.0.1")
+                .usingPort(4723)
+                .build();
+        service.start();
+
+        UiAutomator2Options options = new UiAutomator2Options();
+        options.setDeviceName("emulator-5554");
+        options.setApp("C:\\Users\\Haneef-ullah\\eclipse-workspace\\Appium_project\\APK\\ApiDemos-debug (2).apk");
+        
+        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), options);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		
-		Properties prop =  new Properties();
-		FileInputStream file = new FileInputStream("C:\\Users\\Haneef-ullah\\eclipse-workspace\\Appium_project\\src\\main\\java\\testdata\\data.properties");
-		prop.load(file);
-		String Url = prop.getProperty("Url");
-		String port = prop.getProperty("Port");
-		String DeviceName = prop.getProperty("DeviceName");
-		service = new AppiumServiceBuilder()
-				.withAppiumJS(new File(
-						"C:\\Users\\Haneef-ullah\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
-				.withIPAddress(Url).usingPort(Integer.parseInt(port)).build();
-		service.start();
 
-		UiAutomator2Options options = new UiAutomator2Options();
-		options.setDeviceName(DeviceName);// device emulater
-		options.setChromedriverExecutable("‪C:\\Users\\Haneef-ullah\\eclipse-workspace\\Appium_project\\ChromeDriver\\chromedriver.exe");
-
-		options.setApp("C:\\Users\\Haneef-ullah\\eclipse-workspace\\Appium_project\\APK\\ApiDemos-debug.apk");
-//		options.setApp("C:\\Users\\Haneef-ullah\\eclipse-workspace\\Appium_project\\APK\\001 General-Store.apk");
-
-		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
-
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
 	public void longPress(AndroidDriver driver, WebElement element) {
@@ -107,41 +99,42 @@ public class BaseTest {
 						"direction", direction, "percent", 0.75));
 
 	}
-	
+
 //	public static void startActivity(AndroidDriver driver, String packageName, String activityName) {
 //	    Activity activity = new Activity(packageName, activityName);
 //	    ((AndroidDriver) driver).startsActivity(activity);
 //	}
 
-
-	public String getScreenshotPath(String testCaseName, AppiumDriver driver) throws IOException
-	{
+	public String getScreenshotPath(String testCaseName, AppiumDriver driver) throws IOException {
 		File source = driver.getScreenshotAs(OutputType.FILE);
-		String destinationFile = System.getProperty("user.dir")+"//Report"+testCaseName+".png";
+		String destinationFile = System.getProperty("user.dir") + "//Report" + testCaseName + ".png";
 		FileUtils.copyFile(source, new File(destinationFile));
 		return destinationFile;
-		//1. capture and place in folder //2. extent report pick file and attach to report
-		
-		  
-		
+		// 1. capture and place in folder //2. extent report pick file and attach to
+		// report
+
 	}
+
 	public static void testLandscapeRightRotation() {
 		DeviceRotation rotation = new DeviceRotation(0, 0, 90);
 		driver.rotate(rotation);
 		assertEquals(driver.rotation(), rotation);
 	}
-	 public static Object[][] getDataFromJson(String jsonFilePath) throws Exception {
-	        List<HashMap<String, String>> testDataList = new Gson().fromJson(new FileReader(jsonFilePath),
-	                new TypeToken<List<HashMap<String, String>>>() {}.getType());
 
-	        // Convert List of Maps to Object[][]
-	        Object[][] testData = new Object[testDataList.size()][1];
-	        for (int i = 0; i < testDataList.size(); i++) {
-	            testData[i][0] = testDataList.get(i);
-	        }
+	public static Object[][] getDataFromJson(String jsonFilePath) throws Exception {
+		List<HashMap<String, String>> testDataList = new Gson().fromJson(new FileReader(jsonFilePath),
+				new TypeToken<List<HashMap<String, String>>>() {
+				}.getType());
 
-	        return testData;
-	    }
+		// Convert List of Maps to Object[][]
+		Object[][] testData = new Object[testDataList.size()][1];
+		for (int i = 0; i < testDataList.size(); i++) {
+			testData[i][0] = testDataList.get(i);
+		}
+
+		return testData;
+	}
+
 	public Double getFormattedAmount(String amount) {
 		Double price = Double.parseDouble(amount.substring(1));
 		return price;
@@ -166,7 +159,7 @@ public class BaseTest {
 	@AfterClass(alwaysRun = true)
 	public void teardown() {
 
-		driver.quit();
+//		driver.quit();
 	}
 
 }
